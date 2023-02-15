@@ -1,0 +1,21 @@
+//varibles
+$purple: #9650e0;
+
+//flexbox mixin
+@mixin flexcenter($direction, $justify){
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+
+
+//breakpoint mixin
+@mixin small{
+    @media screen and (min-width: 400px){
+        @content;
+    }
+}
+
+
